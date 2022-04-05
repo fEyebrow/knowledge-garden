@@ -1,0 +1,14 @@
+- ## Performance
+- #### Under the Hood
+- for example, we think that [shortening JIT compilation times](https://hacks.mozilla.org/2019/08/the-baseline-interpreter-a-faster-js-interpreter-in-firefox-70/)  and  [simplifying the optimization pipeline](- https://hacks.mozilla.org/2020/11/warp-improved-js-performance-in-firefox-83/)  can substantially improve page-load and increase smooth behavior, and plan to make these kinds of changes even if it lowers our score on certain synthetic JS benchmarks like Octane and Kraken
+- ### New APIs
+- [Intersection Observers](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+- WebAssembly improves on JavaScript’s CPU efficiency with lower-level abstractions
+- WebGPU improves on WebGL’s GPU efficiency with more modern graphics primitives
+- WebTransport improves on WebSockets’ network efficiency with newer protocols (QUIC).
+- WebAnimations
+- [Prioritized Task Scheduling API ](https://wicg.github.io/scheduling-apis/)
+- ### Faster Delivery
+- new edge computation techniques allow developers to apply the same approach to dynamic responses using [standard Web technologies like WebAssembly](https://docs.fastly.com/products/compute-at-edge)
+-
+-

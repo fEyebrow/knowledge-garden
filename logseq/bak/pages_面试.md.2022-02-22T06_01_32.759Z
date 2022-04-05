@@ -1,0 +1,34 @@
+- Javascript
+	- js时间循环队列中的优先级，Promise > reuqestAnimationFrame > setTimeout > idle
+	- ```Typescript
+	  // infer只能用在extends. 可以通过infer来定义一个变量，用于引用和返回
+	  type Parameters<T extends (...args: any) => any> = T extends (...args: infer P) => any ? P : never;
+	  ```
+- CSS
+	- (postcss-preset-env)[https://github.com/csstools/postcss-preset-env]
+	- modern css
+		- @custom-media --viewport-media (width <= 50rem);
+		- @custom-selector :--heading h1, h2, h3, h4;
+- Html
+	- html转义: 像<或>在html中有特殊的含义，通过将它们转化，使它们只用于显示:
+		- ```html
+		  <b>hello, world</b> => &lt;b&gt;hello world&lt;/b&gt;
+		  ```
+- 构建工具
+	- vite
+- React
+- Vue
+- Svelte
+	- 核心：通过静态编译减少框架运行时的代码量
+	- 优点
+		- 写更少代码，因为使用赋值操作更新状态
+		- 对一些小页面，打包后的最终产物体积更小，因为运行时很小，�按需引入。
+		- 使用位掩码来判断更新
+	- 缺点
+		- 当比较列表差异时，也是需要依赖(keyed each blocks 函数)[https://github.com/sveltejs/svelte/blob/master/src/runtime/internal/keyed_each.ts#L24]
+		- virtual dom来自模版的话，也能区分dom中静态和动态的部分，如Vue
+		- 位掩码更新机制是个阉割版，不能响应array.push/pop。粒度不够细，无法监听到对象属性。
+		- 生态不够完善
+	- 参考
+		- https://zhuanlan.zhihu.com/p/350507037
+		- https://www.zhihu.com/search?type=content&q=HcySunYang%20svelte

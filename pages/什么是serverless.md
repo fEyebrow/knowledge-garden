@@ -1,0 +1,15 @@
+- serverless是Fass加Baas，它使应用在服务端免运维。
+	- fass分为三部分
+		- 触发器，负责负载均衡和反向代理
+		- cicd，监听github的代码变动，实时拉取最新代码
+		- 运行环境，初始化容器和runtime供代码执行
+	- fass优缺点
+		- fass通过分层，事先初始化好了容器和runtime，这提供了相应速度，但也固定了代码的运行环境，用户也不可控制了。
+	- fass的应用
+		- fass分常驻和用完即毁两种模式。常驻模式可用于适应传统mvc。用完即毁可用于backend for frontend，或组合云服务，如邮箱验证。
+	- fass如何扩缩容
+		- 只有stateless能容易扩缩容
+		- 如数据库这种stateful的得包装成接口供fass调用
+	- Bass
+		- 提供后端服务，如持久化和第三方服务
+-

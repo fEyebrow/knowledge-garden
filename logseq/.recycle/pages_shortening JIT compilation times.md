@@ -1,0 +1,2 @@
+- https://hacks.mozilla.org/2019/08/the-baseline-interpreter-a-faster-js-interpreter-in-firefox-70/
+-

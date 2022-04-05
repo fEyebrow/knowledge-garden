@@ -1,0 +1,4 @@
+- Blob
+	- Blob用于存储只读的二进制数据，且支持类文件的操作
+- URl.createObjectURL
+	- URl.createObjectURL可以生成指向Blob（file）的地址，给src使用

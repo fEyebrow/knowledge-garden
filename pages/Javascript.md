@@ -1,0 +1,15 @@
+- event loop:
+	- Tasks execute in order, and the browser may render between them
+	- Microtasks execute in order and are exectued:
+		- after every callback, as long a no other js in mid-execution
+		- at the end of each task
+	- js时间循环队列中的优先级，Promise > reuqestAnimationFrame > setTimeout > idle
+	- event callback的冒泡会穿插在promise中执行
+	- el.click()一直在js stack中，直到冒泡完，才执行promise
+- WeakMap
+	- key一定是对象，但可能被回收，所以key的有效性无法保证。如果想要一个key的list，使用map
+	- 为什么使用WeakMap
+		- 相比Map，WeakMap的key会被回收，不会导致内存泄漏
+		- WeakMap常用于存储当key引用的对象存在时（没有被回收）才有价值的信息
+		-
+-

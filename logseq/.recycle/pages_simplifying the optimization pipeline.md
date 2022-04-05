@@ -1,0 +1,2 @@
+- https://hacks.mozilla.org/2020/11/warp-improved-js-performance-in-firefox-83/
+-

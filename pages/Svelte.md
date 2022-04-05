@@ -1,0 +1,15 @@
+- 核心：通过静态编译减少框架运行时的代码量
+- 优点
+	- 写更少代码，因为使用赋值操作更新状态
+	- 对一些小页面，打包后的最终产物体积更小，因为运行时很小，切按需引入。
+	- 使用位掩码来判断更新
+	- 编译可独立分发的web component。
+- 缺点
+	- 当比较列表差异时，也是需要依赖(keyed each blocks 函数)[https://github.com/sveltejs/svelte/blob/master/src/runtime/internal/keyed_each.ts#L24]
+	- virtual dom来自模版的话，也能区分dom中静态和动态的部分，如Vue
+	- 位掩码更新机制是个阉割版，不能响应array.push/pop。粒度不够细，无法监听到对象属性。
+	- 生态不够完善
+- 参考
+	- https://zhuanlan.zhihu.com/p/350507037
+	- https://www.zhihu.com/search?type=content&q=HcySunYang%20svelte
+	- https://www.zhihu.com/question/53150351

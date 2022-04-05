@@ -1,0 +1,3 @@
+- useLayoutEffect是同步的，它在dom修改后，paint之前执行，可以避免闪烁。 useEffect是异步的，它在组件渲染到页面后执行
+- diff算法
+	- 如果节点已存在，Node.insertBefore会移动节点到新位置
