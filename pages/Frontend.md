@@ -7,4 +7,6 @@
 - [[Vue]]
 - [[Vite SSR]]
 - [[Svelte]]
+  collapsed:: true
 - [[Svelte SSR]]
+  collapsed:: true
