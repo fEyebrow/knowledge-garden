@@ -1,0 +1,30 @@
+- what is SQL and no SQL
+	- SQL
+		- example: MySQL, Oracle or PostgreSQL
+		- represent and store data in tables and rows. You can perform join operations using SQL across different database tables
+	- no SQL
+		- example: CouchDB, Neo4j, Cassandra, HBase, Amazon DynamoDB
+		- categories: KV stores, graph stores, column stores and document stores. Join operations are generally not supported in no SQL
+		- right choice
+			- application require super-low latency
+			- data are unstructured, or you don't have any relational data.
+			- you only need to serialize and deserialize data
+			- you need to store a massive amount of data
+			-
+- Vertical scaling vs horizontal scaling
+	- 垂直扩展指的是增加单机性能，如加强cpu
+		- 优点：简单
+		- 缺点：cpu性能又上限，没有故障转移和冗余
+	- 横向扩展指的是增加服务器数量
+- load balancer
+	- ![image.png](../assets/image_1648204772738_0.png)
+- database replication
+	- master DB + slave DB
+- cache
+	- when to use cache；过期策略；保证数据库数据和缓冲数据的一致性；移除策略；保证多个cache
+- cdn
+- message queue
+- log，metrics，monitoring and automation
+- database scale
+	- 使用哈希函数进行数据分片
+- ![image.png](../assets/image_1648288430527_0.png)
