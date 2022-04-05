@@ -17,7 +17,7 @@
 		- 缺点：cpu性能又上限，没有故障转移和冗余
 	- 横向扩展指的是增加服务器数量
 - load balancer
-	- ![image.png](../assets/image_1648204772738_0.png)
+	- ![image.png](../assets/image_1648204772738_0.jpeg){:height 300, :width 300}
 - database replication
 	- master DB + slave DB
 - cache
@@ -27,4 +27,4 @@
 - log，metrics，monitoring and automation
 - database scale
 	- 使用哈希函数进行数据分片
-- ![image.png](../assets/image_1648288430527_0.png)
+- ![image.png](../assets/image_1648288430527_0.jpeg){:height 300, :width 300}
