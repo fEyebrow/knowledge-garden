@@ -1,0 +1,13 @@
+- principle
+	- focus on language content that is relevant to you
+	- use language as a tool to communicate right from day one
+	- when you first understand the message, then you will acquire the language unconsciously.
+	- physiological training。学语言更像运动。
+	- Psycho-physiological state.心态要好,不需要都了解
+- action
+	- listen a lot
+	- get the meaning first, even before you get the words
+	- start mixing
+	- 找个语言长辈
+	- 模仿脸部
+	- 直接连接，别用母语去映射

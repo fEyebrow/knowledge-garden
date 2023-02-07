@@ -1,0 +1,9 @@
+- Ts
+	- [Extending built-ins like Error, Array, and Map may no longer work](https://github.com/Microsoft/TypeScript-wiki/blob/main/Breaking-Changes.md#extending-built-ins-like-error-array-and-map-may-no-longer-work)
+	-
+- Database
+	- Non-relational databases might be the right choice if:
+		- your application requires super-low latency
+		- your data are unstructured or you don't have any relational data
+		- 你只需要序列化数据
+		- 你要存海量数据

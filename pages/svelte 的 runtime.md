@@ -1,0 +1,8 @@
+- https://zhuanlan.zhihu.com/p/376610290
+	- fre 只有 1kb，一般人肯定会觉得 fre 的 runtime 很轻，但其实不是的
+	- fre 用的算法，主要的遍历方式（fiber 链表的遍历）和 react 一模一样，它俩的 runtime 其实都很重
+	- 1kb 也可以很重，30kb 也可以很轻
+	- runtime 重不重，主要看代码的时空复杂度，svelte 的很多遍历都是一层简单的别名，所以它的总体复杂度和原生 js 相当
+	- 所以不管 svelte 生成的代码有多少，它的 runtime 还是轻量的
+	- 哪怕在某个阈值之后，svelte 生成的代码比 vue 的代码多得多，但不妨碍 svelte 的内存方面，时间方面，都比 vue 要轻得多
+	- 所以尺寸和 runtime 没什么关系

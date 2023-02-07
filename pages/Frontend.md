@@ -3,10 +3,15 @@
 - [[CSS]]
 - [[HTML]]
 - [[Browser]]
+  collapsed:: true
 - [[React]]
 - [[Vue]]
-- [[Vite SSR]]
 - [[Svelte]]
   collapsed:: true
-- [[Svelte SSR]]
-  collapsed:: true
+- [[web performance]]
+- [[mobile]]
+- [[前端面试]]
+- [[web前端架构师]]
+- [[cs questions]]
+- [[webpack5的核心原理与实践]]
+- [[SSR]]

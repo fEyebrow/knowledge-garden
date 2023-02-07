@@ -1,0 +1,27 @@
+- Responsive and Behavioural CSS
+	- mobie和pc端devicePixelRatio的不同，导致页面被缩放，以至于难于阅读
+		- 设置viewport的meta来设定页面宽度，避免缩放：
+			- ```
+			  width=device-width,initial-scale=1.0,minimum-scale=1.0,shrink-to-fit=no
+			  ```
+	- mobile testing
+		- browserStack 或买一台低端android机
+		- accessing localhost：ngrok
+		- ios debugger
+			- 依赖safari -> develop
+			- ios chrome 还是依赖safari来渲染页面，它只是个套着壳的safari
+		- [android debugger](https://developer.chrome.com/docs/devtools/remote-debugging/)
+	- Media Queries
+		- media Queries也准守后面的css覆盖前面的css的原则。media Query内的css可能被后面的css覆盖，而不生效
+		- 使用**nested media queries**，更直观地展示style应用在那个元素上
+		- 是移动为先，还是pc为先。
+			- 看实际的应用场景那个多
+			- 新项目采用移动为先，会更容易修改
+		- other Queries: @media (prefers-color-scheme: dark)
+	- CSS Variables
+		- css variables 是可以组合的
+	-
+		-
+		-
+		-
+		-

@@ -1,0 +1,12 @@
+- 怎么解决边距重叠？使用BFC
+	- BFC让空间中的子元素不会影响到外面的布局
+	- 触发BFC的方法
+		- body，
+		- float除none以外，
+		- position：absolute,fix,
+		- overflow:hidden,scroll,auto,
+		- display：flex
+	- 应用
+		- 边距不重叠
+		- 清除内部浮动和外部浮动
+-

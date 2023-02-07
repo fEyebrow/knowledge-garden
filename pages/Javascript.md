@@ -3,7 +3,7 @@
 	- Microtasks execute in order and are exectued:
 		- after every callback, as long a no other js in mid-execution
 		- at the end of each task
-	- js时间循环队列中的优先级，Promise > reuqestAnimationFrame > setTimeout > idle
+	- js事件循环队列中的优先级，Promise > reuqestAnimationFrame > setTimeout > idle
 	- event callback的冒泡会穿插在promise中执行
 	- el.click()一直在js stack中，直到冒泡完，才执行promise
 - WeakMap

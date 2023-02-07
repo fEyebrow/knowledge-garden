@@ -1,0 +1,32 @@
+- 流程类配置
+	- 输入
+		- entry
+			- 单页面：root下的index.html
+			- 多页面：rollupOptions.input
+		- base定义public path，dev下是 /，prod下根据环境拼接
+		- library mode: build.lib.entry
+	- 模块处理
+		- resolve.alias: 定义路径解析规则
+		- define：定义变量
+		- external：
+			- build: rollupOptions.external
+			- pre-build: optimizeDeps.exclude
+		- module
+			- node_module下文件用esbuild转esmodule
+			- plugin
+				- 基于plugin系统，结合其他工具，如sass，esbuild来处理各类文件
+	- 处理后：optimization
+		- chunking Strategy: build.rollupOptions.output.manualChunks 或使用plugin
+	- 输出
+		- build.outDir
+		- library mode:
+			- build.rollupOptions.output
+	-
+		-
+- 工具类配置
+	- build.watch
+- Esbuild
+	- 目前在prebuild，ts语法转译，代码压缩上使用
+	- 缺点
+		- 不支持lowering to ES5，Code splitting等
+	-

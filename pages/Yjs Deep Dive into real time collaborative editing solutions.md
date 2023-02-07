@@ -1,0 +1,4 @@
+- https://www.tag1consulting.com/blog/deep-dive-real-time-collaborative-editing-solutions-tagteamtalk-001-0
+-
+- 不能简单的基于位置来实现协同，而要基于在一些之后或之前来。
+- history的撤销回复是不是符合每个人的期望，撤销是否会撤销其他人的插入？

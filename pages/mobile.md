@@ -1,0 +1,5 @@
+- vh
+	- problem：手机上的vh会随着滑动变化
+	- solution：自定义--vh，其值为innerHeight/100.监听resize，来实时调整--vh。height：calc(var(--vh, 1vh)  * 100)
+-
+	-

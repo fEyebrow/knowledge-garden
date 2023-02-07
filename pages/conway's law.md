@@ -1,0 +1,5 @@
+- Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure.
+-
+- 根据现实中的组织结构来拆分子域，使子域间的通信像现实组织一样
+-
+- 如果我们的子域之间的逻辑边界是健康的，并且对子域之间共同的类的依赖性进行了仔细的管理，那么改变一个子域的用例不应该影响另一个子域的用例。

@@ -1,0 +1,62 @@
+- what is serverless
+	- serverless is an ecosystem
+		- backend does as little as possible
+		- Clients tie everything together
+		- static files come from fast cdn
+		- database handles data consistency
+		- as much work as possible happens at compile and deploy time
+- pros
+	- 省时，不需要花时间管理服务器
+	- 一次只做一件事，代码易测试，易理解，短开发周期
+	- 根据使用付费，有时候更便宜
+	- 容易横向扩展
+- cons
+	- 要冷启动，有延迟
+	- serverless根据请求次数和计算量，如果有太多请求和太长的运行时间，会导致更高的费用，如机器学习，黑五。
+	- 供应商锁定
+	- functions间交流的复杂度提高
+- AWS, Azure, Vercel, Netlify, or Firebase?
+	- 前端部署用vercel，后端用aws
+- 好的serverless开发体验
+	- Infrastructure-as-code
+	- Fast deploys
+		- Compile your code locally
+		- Compile your infrastructure
+		- upload your bundle
+		- infrastructure sets itself up
+	- Tooling for common tasks
+		- 合并scripts，简化流程
+- Architecture principles
+	- principles
+		- 任何部分都可能fail
+		- system要能在任何地方运行
+		- Make failures easy to fix
+	- how to design a resilient architecture
+		- what is resilient architecture:
+			- isolate errors
+			- make operations replayable
+			- retry until success
+			- make your system debuggable
+			- remove unprocessable request
+			- alert the engineer when something is wrong
+		- How to achieve
+			- Think of your task as a pipeline
+			- each operation follow this algorithm
+				- get request
+				- 检查是否处理了
+				- 如果处理了，就结束
+				- 如果没有处理，就处理
+				- 到下一步
+				- 标记已经处理过
+			- 每个请求需要唯一标志
+			- 每个请求只做一件事
+			- 解耦
+- Elements of serverless: lambdas, queues, gateways, S3, CDN,Logging
+- Robust backend Design
+	- Isolate errors
+		- give each operation a single responsibility
+		- do the whole operation in one atomic go
+		- avoid coupling
+			- 通过queue来解耦，send message to queue
+	- Retry until success
+		-

@@ -1,0 +1,14 @@
+- watch
+	- 创建本地的服务
+		- config: config.optimizeDeps.exclude
+		- load: Generate a virtual ESM module，将import 转成require + export
+	- build main目录下的文件，打好包后，创建一个进程来启动electron。当已存在electron时，销毁已存在的，创建新的。
+	- build preload目录下的文件。打好包后，向浏览器发送重新加载的指令
+- build
+	- build main，设定outDir和entry，配置rollupOptions.external
+	- build preload, 设定outDir和entry，配置rollupOptions.external
+	- build render
+		- transformIndexHtml: 解决exports is not defined
+		- config: config.build.rollupOptions.external
+		-
+		-

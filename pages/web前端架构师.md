@@ -1,0 +1,22 @@
+- 十四周
+	- web service
+		- route
+		- control：负责解析用户的输入，处理后返回相应的结果。Controller 仅负责 HTTP 层的相关处理逻辑，不要包含太多业务逻辑。
+		  collapsed:: true
+			- 获取用户通过 HTTP 传递过来的请求参数。
+			- 校验、组装参数。
+			- 调用 Service 进行业务处理。
+			- 必要时处理转换 Service 的返回结果，如渲染模板。
+			- 通过 HTTP 将结果响应给用户
+		- service：业务逻辑
+		- db：orm
+	- 单元测试为什么难以落实
+		- 混淆了单元测试和集成测试，导致单元测试中有太多mock。要启动服务才能执行的单元测试就不是
+		- 单元测试只针对一个功能
+		- 单元测试只针对一段逻辑，有if..else for逻辑， 平铺直叙的代码不用测试
+	- nosql 和 sql
+		- nosql适何存数据大，层级深的数据
+		- sql适合存结构化的数据，它能join
+- 十五周
+	- 借助github action，通过ssh远程登录服务器，使用docker-compose 文件build image并run。
+	-

@@ -1,1 +1,11 @@
 - [[<<Vue.js设计与实现>>]]
+- vue3与vue2的不同
+	- composition api
+	- proxy 替代 Object.defineProperty
+		- Object.defineProperty需要预先知道要拦截的key是什么，所以无法检测属性的添加和删除
+		  对嵌套层级比较深的对象
+		- Object.defineProperty需要递归遍历对象，将每一层数据变成响应式。如果数据过于复杂，就会有很大的性能负担。
+		- 所以采用了Proxy，解决了第一个问题。
+		- 在getter中递归响应式，来监听内部深层次的对象变化。
+	- createApp 代替 new Vue()
+	-

@@ -1,0 +1,3 @@
+- [[Populating the page: how browsers work]]
+- [[a deep dive into optimizing LCP]]
+-

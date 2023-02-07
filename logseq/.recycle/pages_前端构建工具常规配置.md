@@ -1,0 +1,12 @@
+- mode
+- entry
+- output
+- resolve.alias
+- devServer
+	- port
+	- hot
+	- static
+- loader
+	- babel
+	- scss,css,postcss
+	- file

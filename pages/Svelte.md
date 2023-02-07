@@ -13,3 +13,4 @@
 	- https://zhuanlan.zhihu.com/p/350507037
 	- https://www.zhihu.com/search?type=content&q=HcySunYang%20svelte
 	- https://www.zhihu.com/question/53150351
+- [[svelte 的 runtime]]

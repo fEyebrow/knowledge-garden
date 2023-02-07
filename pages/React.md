@@ -1,3 +1,8 @@
 - useLayoutEffect是同步的，它在dom修改后，paint之前执行，可以避免闪烁。 useEffect是异步的，它在组件渲染到页面后执行
-- diff算法
+- telegram react diff算法：
 	- 如果节点已存在，Node.insertBefore会移动节点到新位置
+	-
+- [[react17源码解析]]
+- 链表vs树
+	- 树改链表后，不需要递归，不需要数组这种连续的内存占用，解决了爆栈的问题，适合大数据的遍历
+	- 改用链表后，只需循环遍历，异步友好
